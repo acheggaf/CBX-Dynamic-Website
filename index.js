@@ -6,7 +6,7 @@ const express = require('express');
 const path = require('path');
 
 
-const PORT = 8080
+const PORT = 80
 
 const app = express()
 

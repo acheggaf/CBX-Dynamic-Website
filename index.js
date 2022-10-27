@@ -58,8 +58,10 @@ app.get('/About', (req, res) => {
 });
 
 
+/*
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
+*/
 
 app.listen(80, () => {
 	console.log('HTTP Server running on port 80');

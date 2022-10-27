@@ -50,3 +50,7 @@ app.get('/About', (req, res) => {
 app.listen(PORT, () => {
     console.log("Serveur démaré")
 })
+
+app.listen(80, () => {
+    console.log("Serveur démaré")
+})

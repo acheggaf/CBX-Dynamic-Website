@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/WordPress
+    destination: /home/ubuntu/cbx/CBX-Dynamic-Website
 hooks:
   ApplicationStart:
     - location: scripts/start_server.sh

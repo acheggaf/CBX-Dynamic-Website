@@ -298,6 +298,7 @@ body {
     width: 100%;
     height: auto;
     margin-top: 2vw;
+    background-color: #222;
 }
 
 .image-link {
@@ -308,6 +309,7 @@ body {
     position: relative;
     text-decoration: none;
     color: #222;
+    background-color: #222;
 }
 
 .content-img {

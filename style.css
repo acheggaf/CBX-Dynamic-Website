@@ -76,7 +76,7 @@ body {
     height: 100%;
     width: 55px;
     position: absolute;
-    top: 25%;
+    top: 12px;
     left: 5%;
 }
 
@@ -239,6 +239,12 @@ body {
 }
 
 .mainPage {
+    margin-top: 50px;
+    height: fit-content;
+    margin-bottom: 2vw;
+}
+
+.aboutPage{
     margin-top: 50px;
     height: fit-content;
     margin-bottom: 2vw;
@@ -420,7 +426,7 @@ body {
 }
 
 .contact-content {
-    height: 80vh;
+    height: fit-content;
     justify-content: start
 }
 
@@ -486,7 +492,7 @@ body {
     font-weight: bold;
     font-size: 4vh;
     margin-top: 1vw;
-    width: 50%;
+    width: 100%;
 }
 
 .text2 {
@@ -826,6 +832,50 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+
+    #navbar{
+       transition: 0.1s ease-in-out;
+    }
+
+    #navbar.active{
+        min-height: 50vh;
+        transition: 0.1s ease;
+    }
+
+    #link-bar-wrapper{
+        display: none;
+        transition: 0.1s ease;
+    }
+
+    #link-bar-wrapper.active{
+        display: flex;
+        flex-direction: column;
+        transition: 0.1s ease;
+    }
+
+    #link-bar-wrapper a{
+        margin-bottom: 5vh;
+    }
+
+    .burger{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 15px;
+        top: 10px;
+        height: fit-content;
+        width: 40px;
+        z-index: 201;
+    }
+
+    .burgerlines
+    {
+        height: 4px;
+        width: 100%;
+        background-color: #eee;
+        margin-top: 5px;
+    }
+
     .content-row
     {
         flex-direction: column;
@@ -863,10 +913,23 @@ body {
         width: 95%;
     }
 
+
+    .aboutBanner{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 56vw;
+    }
+
     .productBanner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 58vw;
+        height: 56vw;
+    }
+
+    .contactBanner{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 56vw;
     }
 
     .center-content {
@@ -909,6 +972,30 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    .effect-charac2
+    {
+        width: 80%;
+    }
+
+    .sphere-cubes-images
+    {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vh;
+    }
+
+    .engine-image
+    {
+        width: 20vh;
+        height: 15vw;
+    }
+
+    .download-header 
+    {
+        display: none;
+    }
+    
 }
 
 #halftime-watch {
@@ -1126,8 +1213,8 @@ body {
 
 .contact-email {
     width: 80%;
-    margin: 1vw 0vw;
-    font-size: 5vh;
+    margin: 2vw 0vw;
+    font-size: 100%;
     font-weight: 100;
     word-break: break-all;
 }

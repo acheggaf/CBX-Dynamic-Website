@@ -652,7 +652,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4vw;
+    padding: 4vw;
+    width: 100%;
 }
 
 .plyr {

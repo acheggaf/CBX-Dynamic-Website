@@ -68,7 +68,7 @@
                 <div class="dh-text">
                     EFFECT PLUGIN : TAPE EMULATION - X | Donwload Now, with a Direct Link.
                 </div>
-                <a href="#" id="send-to-download">
+                <a href="#" id="send-to-download" onclick="return false;">
                     <div class="download-button">
                         Download
                     </div>
@@ -285,8 +285,14 @@
 
 
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
         AOS.init();
+        var downloadButton = document.getElementById("send-to-download");
+        downloadButton.addEventListener('click', () => {
+            var eTop = $('.download-section').offset().top;
+            $('html,body').animate({scrollTop: (eTop)},"slow");
+        });
     </script>
 <script src="script.js"></script>
 </body>

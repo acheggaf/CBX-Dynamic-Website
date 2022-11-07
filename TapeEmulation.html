@@ -288,7 +288,7 @@
         AOS.init();
         var downloadButton = document.getElementById("send-to-download");
         downloadButton.addEventListener('click', () => {
-            var eTop = $('.download-section').offset().top;
+            var eTop = $('.download-section').offset().top - 50;
             $('html,body').animate({scrollTop: (eTop)},"slow");
         });
     </script>

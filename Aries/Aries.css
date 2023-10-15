@@ -1,0 +1,56 @@
+#halftime-watch {
+    background: url(../Images/REVCONTROL.png) no-repeat;
+    background-size: contain;
+    width: 50vh;
+    height: 54vh;
+}
+
+.aries-options-second {
+    position: relative;
+    width: 50vw;
+    height: 25vw;
+    background-color: #000000;
+    margin: 0vw 2vw;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aries-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.hos-logo {
+    z-index: 3;
+    position: absolute;
+    top: 4vh;
+    width: 2vw;
+    height: 2vw;
+    background: url(../Images/CBXC-B.png) no-repeat;
+    background-size: contain;
+}
+
+#aries-hos-txt-1 {
+    color: #f3f3f3;
+    background: linear-gradient(0deg, #8cd1ce 0%, #0084ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#aries-hos-txt-2 {
+    color: #f3f3f3;
+}
+
+#aries-hos-txt-3 {
+    color: #f3f3f3;
+    background: linear-gradient(0deg, #7ed0df 0%, #e6e6e6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

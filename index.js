@@ -7,20 +7,21 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 const https = require('https');
-
+/*
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/cert.pem', 'utf8');
 const ca = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/chain.pem', 'utf8');
-
-const PORT = 443
-
-const app = express()
-
 const credentials = {
 	key: privateKey,
 	cert: certificate,
 	ca: ca
 };
+*/
+const PORT = 443
+
+const app = express()
+
+
 
 app.use(express.static(__dirname));
 
@@ -34,27 +35,26 @@ app.get('/', (req, res) => {
 
 app.get('/TapeEmulation', (req, res) => {
     res.sendFile(__dirname + '/TapeEmulation.html');
-    console.log("tape")
+});
+
+app.get('/Aries', (req, res) => {
+    res.sendFile(__dirname + '/Aries/Aries.html');
 });
 
 app.get('/Halftime', (req, res) => {
     res.sendFile(__dirname + '/Halftime.html');
-    console.log("halftime")
 });
 
 app.get('/Products', (req, res) => {
     res.sendFile(__dirname + '/Products.html');
-    console.log("Products")
 });
 
 app.get('/Contact', (req, res) => {
     res.sendFile(__dirname + '/Contact.html');
-    console.log("Contact")
 });
 
 app.get('/About', (req, res) => {
     res.sendFile(__dirname + '/About.html');
-    console.log("About")
 });
 
 

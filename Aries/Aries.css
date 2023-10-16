@@ -54,3 +54,236 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+#aries-hos-txt-4 {
+    color: #f3f3f3;
+    background: linear-gradient(0deg, #7ed0df 0%, #6747db 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#aries-hos-txt-5 {
+    color: #f3f3f3;
+    background: linear-gradient(0deg, #d8d8d8 0%, #e05863 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contentHolder{ 
+    margin-top: 4vw;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+    align-items: center;
+}
+
+.black-content{
+    background-color: #000000;
+}
+
+.white-content{
+    background-color: #ffffff;
+}
+
+.parametersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    width: 100%;
+}
+.parametersHolder{
+    height: fit-content;
+    margin-top: 5vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AriesParameter{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+}
+
+.AP-ImageHolder{
+    width: 10vw;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.AP-TextHolder{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.AP-TextHolder h5{
+    color: #eeeeee;
+}
+
+.AImage{
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.spiralImage{
+    background: url(../Images/spiral.png) no-repeat;
+    background-size: contain;
+}
+
+.sizeImage{
+    background: url(../Images/size.png) no-repeat;
+    background-size: contain;
+}
+
+.aries-black-title{
+    color: #000000;
+    font-size: 5vw;
+}
+
+.aries-title {
+    margin-top: 2vh;
+}
+
+.XYControllerImage{
+    background: url(../Images/XYCONTROLLER.png) no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 4vh;
+}
+
+.XYTextHolder{
+    width: 80%;
+    color: #000000;
+    text-align: center;
+}
+
+.aries-white-title{
+    color: #ffffff;
+    font-size: 5vw;
+}
+
+.aries-title {
+    margin-top: 2vh;
+    font-size: 5vw;
+}
+
+.display-system-requirements{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.system-requirements {
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: #f8f8f8;
+    width: 50%;
+}
+
+.system-requirements-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.system-requirements h2 {
+    font-size: 1.5em;
+}
+
+/* Styling for the Windows and macOS sections */
+.requirements-section {
+    flex: 1;
+    margin-top: 15px;
+}
+
+.requirements-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.requirements-list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Styling for logos */
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+/* Vertical line separator */
+.vertical-line {
+    position: relative;
+    display: flex;
+    background-color: #000000;
+    width: 1px;
+    height: 100%;
+    
+}
+
+.requirements-list{
+    list-style-type: none
+}
+
+@media screen and (max-width: 700px) {
+
+    .XYControllerImage{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .XYTextHolder h5{
+        font-size: 4vw;
+    }
+
+    .aries-white-title{
+        color: #ffffff;
+        font-size: 8vw;
+    }
+
+    .AriesParameter{
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .AriesParameter{
+        flex-direction: column;
+    
+    }
+
+    .AP-TextHolder{
+        width: fit-content;
+    }
+
+    .AP-TextHolder h5{
+        color: #eeeeee;
+        font-size: 3vw;
+    }
+
+    .AP-ImageHolder{
+        width: 40vw;
+    }
+}

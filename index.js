@@ -15,7 +15,6 @@ const credentials = {
 	cert: certificate,
 	ca: ca
 };
-
 const PORT = 443
 
 const app = express()

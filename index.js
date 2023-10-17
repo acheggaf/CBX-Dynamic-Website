@@ -7,7 +7,6 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 const https = require('https');
-/*
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/cert.pem', 'utf8');
 const ca = fs.readFileSync('/etc/letsencrypt/live/cbxsound.com/chain.pem', 'utf8');
@@ -16,7 +15,7 @@ const credentials = {
 	cert: certificate,
 	ca: ca
 };
-*/
+
 const PORT = 443
 
 const app = express()
@@ -58,10 +57,10 @@ app.get('/About', (req, res) => {
 });
 
 
-/*
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
-*/
+
 
 app.listen(80, () => {
 	console.log('HTTP Server running on port 80');
